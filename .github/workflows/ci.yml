@@ -9,9 +9,6 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - '**.rs'
-      - '**.toml'
 
 jobs:
   check:
@@ -32,3 +29,5 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: check
+          args: --manifest-path=rust-client/Cargo.toml
+          
