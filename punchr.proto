@@ -67,7 +67,7 @@ enum HolePunchOutcome {
 
 message TrackHolePunchRequest {
   // Peer ID of the requesting punchr client
-  required bytes client_id = 1;
+  required bytes clientid = 1;
 
   // Peer ID of the remote peer that was hole punched
   required bytes remote_id = 2;
